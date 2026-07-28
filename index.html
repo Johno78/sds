@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safety Data Sheets | Gellings | Isle of Man</title>
+<style>
+  :root{
+    --navy:#1a2340;
+    --navy-light:#26325a;
+    --teal:#54b2ac;
+    --teal-dark:#3d8f8a;
+    --brass:#c9a35c;
+    --grey:#f4f6f7;
+    --text:#2c333f;
+    --muted:#8891a1;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Arial, Helvetica, sans-serif;
+    background:var(--grey);
+    color:var(--text);
+  }
+  header{
+    background:var(--navy);
+    color:#fff;
+    padding:26px 20px 30px;
+    text-align:center;
+    border-bottom:4px solid var(--teal);
+  }
+  header .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:12px;
+    color:var(--teal);
+    font-weight:600;
+    margin-bottom:8px;
+  }
+  header h1{
+    margin:0 0 8px;
+    font-size:clamp(24px,4vw,34px);
+  }
+  header p{
+    margin:0;
+    color:#c7cede;
+    font-size:15px;
+    max-width:640px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.5;
+  }
+  .backlink{
+    display:inline-block;
+    margin-bottom:16px;
+    color:var(--teal);
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+  }
+  .backlink:hover{ text-decoration:underline; }
+
+  main{
+    max-width:960px;
+    margin:0 auto;
+    padding:34px 20px 60px;
+  }
+
+  .notice{
+    background:#fff;
+    border-left:4px solid var(--brass);
+    border-radius:6px;
+    padding:16px 20px;
+    margin-bottom:30px;
+    font-size:14.5px;
+    line-height:1.55;
+    box-shadow:0 1px 3px rgba(26,35,64,0.08);
+  }
+  .notice strong{ color:var(--navy); }
+
+  .search-wrap{
+    margin-bottom:26px;
+  }
+  #search{
+    width:100%;
+    padding:13px 16px;
+    font-size:16px;
+    border:2px solid #dfe3ea;
+    border-radius:8px;
+    outline:none;
+    transition:border-color .15s;
+  }
+  #search:focus{ border-color:var(--teal); }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(88px,1fr));
+    gap:12px;
+  }
+  .letter{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    aspect-ratio:1/1;
+    background:#fff;
+    border-radius:10px;
+    text-decoration:none;
+    color:var(--navy);
+    font-weight:700;
+    font-size:26px;
+    box-shadow:0 1px 3px rgba(26,35,64,0.08);
+    border:2px solid transparent;
+    transition:transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+  }
+  .letter:hover{
+    transform:translateY(-3px);
+    border-color:var(--teal);
+    box-shadow:0 6px 14px rgba(84,178,172,0.25);
+  }
+  .letter .tag{
+    font-size:9px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--teal-dark);
+    font-weight:600;
+    margin-top:4px;
+  }
+  .letter.empty{
+    background:#eceff2;
+    color:var(--muted);
+    cursor:default;
+    pointer-events:none;
+    box-shadow:none;
+  }
+  .letter.empty .tag{ color:var(--muted); }
+  .letter.hide{ display:none; }
+
+  .legend{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:22px;
+    font-size:13px;
+    color:var(--muted);
+  }
+  .legend span{ display:inline-flex; align-items:center; gap:6px; }
+  .dot{ width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .dot.active{ background:var(--teal); }
+  .dot.empty{ background:#ccc; }
+
+  footer{
+    text-align:center;
+    padding:26px 20px 40px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--teal-dark); text-decoration:none; }
+  footer a:hover{ text-decoration:underline; }
+
+  @media (max-width:480px){
+    .grid{ grid-template-columns:repeat(auto-fill, minmax(70px,1fr)); }
+    .letter{ font-size:22px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Gellings &middot; The Happy Hygiene &amp; Hospitality People</div>
+  <h1>Safety Data Sheets</h1>
+  <p>Find the Safety Data Sheet (SDS) for any product we supply. Sheets are grouped alphabetically by product name &mdash; select a letter below to open the relevant folder.</p>
+</header>
+
+<main>
+  <a class="backlink" href="https://www.gellings.im/">&larr; Back to Gellings.im</a>
+
+  <div class="notice">
+    <strong>How this works:</strong> Each letter opens a folder of PDF Safety Data Sheets, hosted securely on Google Drive. Folders open in a new tab. If you can't find the sheet you need, call us on <strong>01624 671200</strong> or email <a href="mailto:info@gellings.im">info@gellings.im</a> and we'll send it straight over.
+  </div>
+
+  <div class="search-wrap">
+    <input type="text" id="search" placeholder="Type a product name to jump to its letter&hellip;" autocomplete="off">
+  </div>
+
+  <div class="grid" id="grid">
+    <a class="letter" data-letter="A" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1MOOcQUp49U6mKXGqsyDMO9hIG-fX9LnI?usp=drive_link">A<span class="tag">Open</span></a>
+    <a class="letter" data-letter="B" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1foYkHdb5LeyhwiKB59DZKziicZi_M5Ph?usp=sharing">B<span class="tag">Open</span></a>
+    <a class="letter" data-letter="C" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1-HnmSoNAz3YS_J5rLXk291gcvbXbBmtr?usp=sharing">C<span class="tag">Open</span></a>
+    <a class="letter" data-letter="D" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1puhpTLXiItCSiYSuhvXsF_iWU_RIAPQd?usp=sharing">D<span class="tag">Open</span></a>
+    <a class="letter" data-letter="E" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1iQXnqFtaoU52YeyNwGn4cB7SrbswkwPp?usp=sharing">E<span class="tag">Open</span></a>
+    <a class="letter" data-letter="F" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1W2WhF5mwP89tQgs7BS62q7bVDgOn_MGL?usp=sharing">F<span class="tag">Open</span></a>
+    <a class="letter" data-letter="G" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1GJbK0Z7YkoeTnfLV3hf0J4YVP0ALg5rz?usp=sharing">G<span class="tag">Open</span></a>
+    <a class="letter" data-letter="H" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1VlmZUK_7PntbCFIh-bkyuMArTIV0rUty?usp=sharing">H<span class="tag">Open</span></a>
+    <a class="letter" data-letter="I" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1xgwj5rZpoHyDoDXfpevkfSeoFaIAXFtq?usp=sharing">I<span class="tag">Open</span></a>
+    <a class="letter" data-letter="J" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1bKMqQBlIUernpq9M7Hv6jIhPDiZqQa7Y?usp=sharing">J<span class="tag">Open</span></a>
+    <a class="letter" data-letter="K" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/13GsKBCSQ2iWkEWm40HTUO1VzwU6G4PVl?usp=sharing">K<span class="tag">Open</span></a>
+    <a class="letter" data-letter="L" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1LwhkjQ-8cHAml9nikjKfV79Z_fU9pSIO?usp=sharing">L<span class="tag">Open</span></a>
+    <a class="letter" data-letter="M" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1vgc6RuTwSPYL_qrTLh3cPXAUjgDe9HyA?usp=sharing">M<span class="tag">Open</span></a>
+    <a class="letter" data-letter="N" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1tv8nHtjNve8azE6IdmIcv2rQZ2kG5xTE?usp=sharing">N<span class="tag">Open</span></a>
+    <a class="letter" data-letter="O" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1Bfw42_-ezt5BlEsChNN5jd06pJWg4DsY?usp=sharing">O<span class="tag">Open</span></a>
+    <a class="letter" data-letter="P" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1DdFEr2g8akzIFyGMn_x99b9TLcZ8tLa5?usp=sharing">P<span class="tag">Open</span></a>
+    <a class="letter" data-letter="Q" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1KBBUkvfNs1wn4UuCTWOXztxBmzgWHLOT?usp=sharing">Q<span class="tag">Open</span></a>
+    <a class="letter" data-letter="R" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1T1u9UKphDvgG_L1LJOVdtLy3AvK7Mw_2?usp=sharing">R<span class="tag">Open</span></a>
+    <a class="letter" data-letter="S" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1qOR7OWWFC2KMHKriRJPhXnWVIiZOBrKu?usp=sharing">S<span class="tag">Open</span></a>
+    <a class="letter" data-letter="T" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1uQ3mbMrRG-yQM6h0aJcKCaTnYWnRRKE3/view?usp=sharing">T<span class="tag">Open</span></a>
+    <a class="letter" data-letter="U" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1BFMHK9Nbo7pVNB2ofoo5Gr1d6incEsRW?usp=sharing">U<span class="tag">Open</span></a>
+    <span class="letter empty" data-letter="V">V<span class="tag">None</span></span>
+    <a class="letter" data-letter="W" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1xWyUe2H3-wBQUrWrFPb1Ozacwx2mQQYO?usp=sharing">W<span class="tag">Open</span></a>
+    <span class="letter empty" data-letter="X">X<span class="tag">None</span></span>
+    <span class="letter empty" data-letter="Y">Y<span class="tag">None</span></span>
+    <span class="letter empty" data-letter="Z">Z<span class="tag">None</span></span>
+  </div>
+
+  <div class="legend">
+    <span><span class="dot active"></span> Folder available</span>
+    <span><span class="dot empty"></span> No products starting with this letter</span>
+  </div>
+</main>
+
+<footer>
+  Gellings &middot; Unit 4 Kirby Farm Industrial Estate, Vicarage Road, Braddan, Isle of Man, IM4 4LA<br>
+  Call 01624 671200 &middot; <a href="mailto:info@gellings.im">info@gellings.im</a>
+</footer>
+
+<script>
+  const search = document.getElementById('search');
+  const letters = Array.from(document.querySelectorAll('.letter'));
+  search.addEventListener('input', () => {
+    const val = search.value.trim().toUpperCase();
+    const firstChar = val.charAt(0);
+    letters.forEach(el => {
+      if(!val){
+        el.classList.remove('hide');
+        el.style.outline = 'none';
+      } else if (el.dataset.letter === firstChar){
+        el.classList.remove('hide');
+        el.style.outline = '3px solid var(--brass)';
+      } else {
+        el.style.outline = 'none';
+        el.classList.add('hide');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
